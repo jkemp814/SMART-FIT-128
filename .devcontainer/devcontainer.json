@@ -1,5 +1,5 @@
 {
-  "name": "Fedora Rust Devcontainer",
+  "name": "Fedora Rust Devcontainer (Minimal)",
   "build": {
     "dockerfile": "Dockerfile"
   },
