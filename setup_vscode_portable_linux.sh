@@ -3,7 +3,7 @@
 
 set -e
 
-ROOT_DIR="$(dirname \"$0\")"
+ROOT_DIR="$(dirname \""$0"\")"
 VSCODE_DIR="$ROOT_DIR/VSCodePortable-Linux"
 VSCODE_DATA="$VSCODE_DIR/data"
 PROJECTS_DIR="$ROOT_DIR/Projects"
