@@ -4,7 +4,7 @@
 echo "[DEBUG] Starting VS Code Portable Setup Script for Linux"
 set -x
 
-ROOT_DIR="$(dirname \""$0"\")"
+ROOT_DIR="$PWD"
 VSCODE_DIR="$ROOT_DIR/VSCodePortable-Linux"
 VSCODE_DATA="$VSCODE_DIR/data"
 PROJECTS_DIR="$ROOT_DIR/Projects"

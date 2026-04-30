@@ -38,6 +38,9 @@ projects/*/__pycache__/
 # Ignore coverage reports
 htmlcov/
 .coverage
+
+# Ignore VS Code Portable Linux
+VSCodePortable-Linux/
 coverage.xml
 
 # Ignore temporary files
