@@ -5,7 +5,7 @@ A cross-platform portable development environment supporting both **Linux and Wi
 ## Features
 
 - **Cross-Platform Support**: Runs on Linux and Windows from portable storage
-- **Portable Applications**: Firefox, KeePass, Calibre, and more included
+- **Portable Applications**: PortableFirefox, PortableChromium, KeePass, Calibre, and more included
 - **Development Environments**: Pre-configured setups for Python, Rust, C++, Bash, and full development stacks
 - **Portable Git**: Self-contained Git installation
 - **Portable VS Code**: Linux and Windows versions included
@@ -84,6 +84,7 @@ PORTABLE-DEV/
 - **Portability**: Keep all development tools and data on the external drive for use across computers
 - **Version Control**: Each project in `Projects/` can be its own git repository
 - **Cross-Platform Switching**: Use the same codebase on both Linux and Windows without duplication
+- **Browser Option**: Side note: you can use either PortableFirefox or PortableChromium
 - **Keep It Clean**: Use `.gitignore` to exclude build artifacts and temporary files
 
 ## License
