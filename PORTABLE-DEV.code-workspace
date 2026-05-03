@@ -4,5 +4,8 @@
       "path": ".",
     },
   ],
-  "settings": {},
+  "settings": {
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Caskaydia Cove Nerd Font', Consolas, 'Cascadia Code', 'DejaVu Sans Mono', 'Liberation Mono', monospace",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Caskaydia Cove Nerd Font Mono', 'CaskaydiaCove Nerd Font', 'Caskaydia Cove Nerd Font', Consolas, 'Cascadia Mono', 'DejaVu Sans Mono', 'Liberation Mono', monospace",
+  },
 }
