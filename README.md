@@ -39,8 +39,8 @@ PORTABLE-DEV/
 
 ## Prerequisites
 
-- **For Dev Containers**: Docker or Podman must be installed on the host machine
-  - **Linux**: Install Docker or Podman via your package manager
+- **For Dev Containers**: Podman or Docker must be installed on the host machine
+  - **Linux**: Install Podman or Docker via your package manager
   - **Windows**: Install Docker Desktop (includes Docker Engine)
   - **macOS**: Install Docker Desktop or Podman
 
