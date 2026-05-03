@@ -33,10 +33,14 @@ PORTABLE-DEV/
 ├── PortableGit/             # Self-contained Git installation
 ├── Toolchest/               # Scripts and utilities
 ├── VSCodePortable-Linux/    # VS Code for Linux
+│   └── data/                # Portable VS Code state (extensions, settings, user data)
 ├── VSCodePortable-Windows/  # VS Code for Windows
+│   └── data/                # Portable VS Code state (extensions, settings, user data)
 ├── PORTABLE-DEV.code-workspace
 └── README.md
 ```
+
+`data/` is important for portable VS Code builds because it stores the runtime/user state they rely on when running from removable media.
 
 ## Prerequisites
 
