@@ -1,6 +1,6 @@
-# FEDORA_DEV Portable Devcontainer
+# Portable Devcontainer
 
-This repository contains a portable Fedora-based devcontainer setup for reproducible development environments. It includes scripts, configuration files, and instructions for setting up and using the devcontainer.
+This repository contains a portable Fedora-based and Windows devcontainers setup for reproducible development environments. It includes scripts, configuration files, and instructions for setting up and using the devcontainer.
 
 ## Features
 
