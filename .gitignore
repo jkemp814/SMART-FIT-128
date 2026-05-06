@@ -1,4 +1,3 @@
-Toolchest/Fonts/
 # Ignore Python virtual environments and caches
 **/.venv/
 **/__pycache__/
@@ -46,6 +45,7 @@ Environments/
 # Ignore VS Code Portable Linux
 VSCodePortable-Linux/
 VSCodePortable-Windows/
+Toolchest/Fonts/
 coverage.xml
 
 # Ignore temporary files

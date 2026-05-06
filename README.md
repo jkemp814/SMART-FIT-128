@@ -1,125 +1,136 @@
+[![GitHub stars](https://img.shields.io/github/stars/jkemp814/PORTABLE-DEV?style=social)](https://github.com/jkemp814/PORTABLE-DEV)
+[![GitHub forks](https://img.shields.io/github/forks/jkemp814/PORTABLE-DEV?style=social)](https://github.com/jkemp814/PORTABLE-DEV/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/jkemp814/PORTABLE-DEV)](https://github.com/jkemp814/PORTABLE-DEV/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/jkemp814/PORTABLE-DEV)](https://github.com/jkemp814/PORTABLE-DEV/commits/main)
+[![Languages](https://img.shields.io/github/languages/top/jkemp814/PORTABLE-DEV)](https://github.com/jkemp814/PORTABLE-DEV/search?l=Shell)
+
 # Portable Development Environment
 
-A cross-platform portable development environment supporting both **Linux and Windows**. This setup provides reproducible development environments with portable applications, dev containers, and organized development tools—all self-contained and runnable from external drives.
+> **A cross-platform, plug-and-play coding environment you can carry anywhere.**  
+> Compatible with **Linux**, **Windows**, containers, and VMs, all self-contained and ready to go from an external drive or any host.
 
-## Features
+---
 
-- **Cross-Platform Support**: Runs on Linux and Windows from portable storage
-- **Portable Applications**: PortableFirefox, PortableChromium, KeePass, Calibre, and more included
-- **Reference Library**: Technical manuals, programming language guides, and code references via calibrePortable
-- **Development Environments**: Pre-configured setups for Python, Rust, C++, Bash, and full development stacks
-- **Portable Git**: Self-contained Git installation
-- **Portable VS Code**: Bundled Linux and Windows portable builds in this project
-- **Dev Containers**: Podman/Docker/container support for isolated development
-- **Projects Folder**: Centralized workspace for your code repositories
+## 🚩 Features
 
-## Folder Structure
+- **Cross-Platform:** Works on Linux & Windows (and with minor tweaks, macOS).
+- **Portable Apps:** Includes portable versions of Firefox, Chromium, KeePass, Calibre, Git, VS Code, and more.
+- **Reference Library:** Offline technical manuals, programming guides, and code references via Calibre.
+- **Multiple Dev Stacks:** Pre-configured Python, Rust, C++, Bash, and full-stack environments.
+- **Dev Containers:** Podman/Docker support for instant, isolated environments.
+- **Central Projects Folder:** Single workspace for all your repos.
+- **All-in-One:** Works off external drives—perfect for school, work, or travel.
+
+---
+
+## 📂 Folder Structure
 
 ```text
 PORTABLE-DEV/
-├── Documents/               # Personal documents
-├── Environments/            # Dev environment configurations
+├── Documents/                  # Personal documents
+├── Environments/               # Dev env configurations (Python, Rust, C++, Bash, etc.)
 │   ├── BashDev/
 │   ├── CppDev/
 │   ├── PythonDev/
 │   ├── RustDev/
 │   └── FullDevelopmentEnv/
-├── Projects/                # Your code repositories and projects
-├── PortableApps/            # Self-contained applications
+├── Projects/                   # All code repositories & projects
+├── PortableApps/               # Standalone portable applications
 │   ├── FirefoxPortable/
 │   ├── KeePassXCPortable/
-│   ├── calibrePortable/     # Technical manuals, programming language guides, and code references
+│   ├── calibrePortable/
 │   └── ClamWinPortable/
-├── PortableGit/             # Self-contained Git installation
-├── Toolchest/               # Scripts and utilities
-├── VSCodePortable-Linux/    # VS Code for Linux
-│   └── data/                # Portable VS Code state (extensions, settings, user data)
-├── VSCodePortable-Windows/  # VS Code for Windows
-│   └── data/                # Portable VS Code state (extensions, settings, user data)
-├── PORTABLE-DEV.code-workspace
+├── PortableGit/                # Portable Git
+├── Toolchest/                  # Helper scripts & utilities
+├── VSCodePortable-Linux/       # VS Code Portable for Linux (+ data/)
+├── VSCodePortable-Windows/     # VS Code Portable for Windows (+ data/)
+├── PORTABLE-DEV.code-workspace # VS Code workspace file
 └── README.md
 ```
 
-`data/` is important for portable VS Code builds because it stores the runtime/user state they rely on when running from removable media.
+_Tip: The `data/` subfolder for VS Code stores your settings and extensions, keeping your IDE portable and personalized._
 
-## Prerequisites
+---
 
-- **For Dev Containers**: Podman or Docker must be installed on the host machine
-  - **Linux**: Install Podman or Docker via your package manager
-  - **Windows**: Install Docker Desktop (includes Docker Engine)
-  - **macOS**: Install Docker Desktop or Podman
+## 🛠️ Prerequisites
 
-## Getting Started
+- **Linux:** Podman (recommended) or Docker installed on the host
+- **Windows:** Docker Desktop or [Podman for Windows](https://podman.io/getting-started/installation)
+- **macOS:** Docker Desktop or Podman (some features may require adaptation)
+- **External or Portable Storage:** For maximum portability
 
-Use the bundled portable VS Code builds in this repository for the most consistent behavior across hosts.
+---
 
-### Using on Linux
+## 🚀 Getting Started
 
-1. Open the workspace with the Linux portable VS Code build included in this project:
+### On Linux
 
-   ```bash
-   ./VSCodePortable-Linux/bin/code PORTABLE-DEV.code-workspace
-   ```
+```bash
+./VSCodePortable-Linux/bin/code PORTABLE-DEV.code-workspace
+```
 
-2. Use the environment-specific setups in `Environments/`
-3. Add your projects to the `Projects/` folder
-4. Use Portable Git located in `PortableGit/bin/git`
+- Use the provided configs in `Environments/`
+- Keep your repositories in `Projects/`
+- VS Code and Git = portable, ready-to-go
 
-### Using on Windows
+### On Windows
 
-1. Open the workspace file in VS Code Portable (Windows):
+```powershell
+VSCodePortable-Windows/bin/Code.exe PORTABLE-DEV.code-workspace
+```
 
-   ```bash
-   VSCodePortable-Windows/bin/Code.exe PORTABLE-DEV.code-workspace
-   ```
+- Use `PortableGit` for version control
+- Your projects and tools are all set up under one roof
 
-2. Use Portable Git for version control
-3. Add your projects to the `Projects/` folder
+### Dev Containers (Optional, recommended for isolation)
 
-### Working with Dev Containers
+1. Configure environments in `Environments/`
+2. Use or edit `.devcontainer/devcontainer.json`
+3. In VS Code, "Reopen in Container"
 
-1. Configure your environment in `Environments/`
-2. Set up `.devcontainer/devcontainer.json` with proper mounts
-3. Use "Reopen in Container" in VS Code when ready
+---
 
-## Customization
+## ⚙️ Customization
 
-- **Development Environments**: Each subfolder in `Environments/` contains environment-specific configurations
-- **Dev Container Setup**: Edit or create `.devcontainer/devcontainer.json` in your environment to customize container mounts and tools
-- **Portable Apps**: Install additional portable applications in the `PortableApps/` folder
-- **Scripts**: Add helper scripts to `Toolchest/` for common tasks
+- **Environments:** Tweak configs per language/stack in `Environments/`
+- **Dev Containers:** Update `.devcontainer/devcontainer.json` as needed
+- **Portable Apps:** Add more apps to `PortableApps/`
+- **Scripts:** Your helper scripts go in `Toolchest/`
 
-## How This Setup Was Built
+---
 
-1. Prepare a portable drive layout and keep all tools/data at the drive root.
-2. Install or extract cross-platform tools (VS Code, Git, and portable apps) into dedicated folders.
-3. Create reusable development environments under `Environments/`.
-4. Keep project repositories under `Projects/`.
-5. Use Dev Containers for isolated toolchains, and mount `Projects/` from the host into the container.
-6. Track infrastructure and documentation changes in git.
+## 📚 Reference & Resources
 
-## References
+- [VS Code Portable Mode](https://code.visualstudio.com/docs/editor/portable)
+- [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)
+- [PortableApps Directory](https://portableapps.com/apps)
+- [PortableGit](https://github.com/git-for-windows/git/releases)
+- [Podman](https://podman.io/getting-started/installation)
+- [Docker](https://www.docker.com/get-started/)
 
-- **VS Code Portable (Linux, in this project)**: [VSCodePortable-Linux](VSCodePortable-Linux)
-- **VS Code Portable (Windows, in this project)**: [VSCodePortable-Windows](VSCodePortable-Windows)
-- **VS Code Downloads (official source for updating bundled builds)**: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
-- **VS Code Portable Mode (official docs)**: [https://code.visualstudio.com/docs/editor/portable](https://code.visualstudio.com/docs/editor/portable)
-- **VS Code Dev Containers (official docs)**: [https://code.visualstudio.com/docs/devcontainers/containers](https://code.visualstudio.com/docs/devcontainers/containers)
-- **Microsoft Dev Container samples**: [https://github.com/devcontainers/images/tree/main/src](https://github.com/devcontainers/images/tree/main/src)
-- **PortableApps Platform**: [https://portableapps.com/download](https://portableapps.com/download)
-- **PortableApps App Directory**: [https://portableapps.com/apps](https://portableapps.com/apps)
-- **Git for Windows Downloads**: [https://git-scm.com/download/win](https://git-scm.com/download/win)
-- **PortableGit Releases (Git for Windows)**: [https://github.com/git-for-windows/git/releases](https://github.com/git-for-windows/git/releases)
+---
 
-## Tips
+## 💡 Tips
 
-- **Mount External Drives**: Use `devcontainer.json` mounts to access Projects folder from inside containers
-- **Portability**: Keep all development tools and data on the external drive for use across computers
-- **Version Control**: Each project in `Projects/` can be its own git repository
-- **Cross-Platform Switching**: Use the same codebase on both Linux and Windows without duplication
-- **Browser Option**: Side note: you can use either PortableFirefox or PortableChromium
-- **Keep It Clean**: Use `.gitignore` to exclude build artifacts and temporary files
+- **Portability:** Run everything off a USB SSD, NVMe, or portable drive for true plug-and-code freedom.
+- **Mount Drives:** With dev containers, use mounts for `Projects/` as your codespace.
+- **Version Control:** Each project in `Projects/` can be its own Git repo, managed with PortableGit.
+- **Cross-Platform:** Use the same workspace and codebase on both Windows & Linux without duplication.
+- **Keep It Clean:** Use `.gitignore` wisely for build artifacts and temp files.
 
-## License
+---
 
-Licensed under the MIT License. See [LICENSE](LICENSE).
+## 🤝 Contributing
+
+PRs and suggestions are welcome!  
+Please open issues or pull requests as you improve or adapt the project for more platforms or stacks.
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+**Happy Coding—Anywhere, Anytime!**
